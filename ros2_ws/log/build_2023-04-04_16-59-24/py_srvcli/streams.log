@@ -1,0 +1,37 @@
+[0.517s] Invoking command in '/home/zj/cx/LearnRos2/ros2_ws/src/py_srvcli': PYTHONPATH=/home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/prefix_override:/home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build install --record /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed
+[0.709s] running egg_info
+[0.709s] creating ../../build/py_srvcli/py_srvcli.egg-info
+[0.710s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[0.710s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[0.710s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[0.710s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[0.710s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[0.710s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.734s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.734s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.734s] running build
+[0.734s] running build_py
+[0.735s] creating /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build
+[0.735s] creating /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build/lib
+[0.735s] creating /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build/lib/py_srvcli
+[0.735s] copying py_srvcli/service_member_function.py -> /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build/lib/py_srvcli
+[0.735s] copying py_srvcli/__init__.py -> /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build/lib/py_srvcli
+[0.735s] running install
+[0.736s] running install_lib
+[0.736s] creating /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[0.736s] copying /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[0.736s] copying /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build/lib/py_srvcli/__init__.py -> /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[0.736s] byte-compiling /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-38.pyc
+[0.737s] byte-compiling /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/__init__.py to __init__.cpython-38.pyc
+[0.737s] running install_data
+[0.737s] creating /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/share/ament_index
+[0.738s] creating /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/share/ament_index/resource_index
+[0.738s] creating /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages
+[0.738s] copying resource/py_srvcli -> /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages
+[0.738s] copying package.xml -> /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/share/py_srvcli
+[0.738s] running install_egg_info
+[0.739s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info
+[0.739s] running install_scripts
+[0.751s] Installing service script to /home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/py_srvcli
+[0.751s] writing list of installed files to '/home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/install.log'
+[0.769s] Invoked command in '/home/zj/cx/LearnRos2/ros2_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/prefix_override:/home/zj/cx/LearnRos2/ros2_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/build install --record /home/zj/cx/LearnRos2/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed

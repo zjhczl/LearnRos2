@@ -1,0 +1,33 @@
+[0.523s] Invoking command in '/home/zj/cx/LearnRos2/ros2_ws/src/tutorial_interfaces-py': PYTHONPATH=/home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/prefix_override:/home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tutorial_interfaces build --build-base /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build install --record /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/install.log --single-version-externally-managed
+[0.712s] running egg_info
+[0.713s] creating ../../build/tutorial_interfaces/tutorial_interfaces.egg-info
+[0.713s] writing ../../build/tutorial_interfaces/tutorial_interfaces.egg-info/PKG-INFO
+[0.713s] writing dependency_links to ../../build/tutorial_interfaces/tutorial_interfaces.egg-info/dependency_links.txt
+[0.713s] writing entry points to ../../build/tutorial_interfaces/tutorial_interfaces.egg-info/entry_points.txt
+[0.713s] writing requirements to ../../build/tutorial_interfaces/tutorial_interfaces.egg-info/requires.txt
+[0.714s] writing top-level names to ../../build/tutorial_interfaces/tutorial_interfaces.egg-info/top_level.txt
+[0.714s] writing manifest file '../../build/tutorial_interfaces/tutorial_interfaces.egg-info/SOURCES.txt'
+[0.738s] reading manifest file '../../build/tutorial_interfaces/tutorial_interfaces.egg-info/SOURCES.txt'
+[0.739s] writing manifest file '../../build/tutorial_interfaces/tutorial_interfaces.egg-info/SOURCES.txt'
+[0.739s] running build
+[0.739s] running build_py
+[0.739s] creating /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build
+[0.739s] creating /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build/lib
+[0.739s] creating /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build/lib/tutorial_interfaces
+[0.740s] copying tutorial_interfaces/__init__.py -> /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build/lib/tutorial_interfaces
+[0.740s] running install
+[0.740s] running install_lib
+[0.740s] creating /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces
+[0.740s] copying /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build/lib/tutorial_interfaces/__init__.py -> /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces
+[0.740s] byte-compiling /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/__init__.py to __init__.cpython-38.pyc
+[0.741s] running install_data
+[0.741s] creating /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/share/ament_index
+[0.742s] creating /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index
+[0.742s] creating /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages
+[0.742s] copying resource/tutorial_interfaces -> /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages
+[0.742s] copying package.xml -> /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces
+[0.742s] running install_egg_info
+[0.743s] Copying ../../build/tutorial_interfaces/tutorial_interfaces.egg-info to /home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces-0.0.0-py3.8.egg-info
+[0.743s] running install_scripts
+[0.755s] writing list of installed files to '/home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/install.log'
+[0.772s] Invoked command in '/home/zj/cx/LearnRos2/ros2_ws/src/tutorial_interfaces-py' returned '0': PYTHONPATH=/home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/prefix_override:/home/zj/cx/LearnRos2/ros2_ws/install/tutorial_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tutorial_interfaces build --build-base /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/build install --record /home/zj/cx/LearnRos2/ros2_ws/build/tutorial_interfaces/install.log --single-version-externally-managed

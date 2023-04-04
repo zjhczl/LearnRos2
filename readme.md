@@ -425,3 +425,271 @@ ros2 pkg create --build-type ament_python py_pubsub
 ```
 wget https://raw.githubusercontent.com/ros2/examples/rolling/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py
 ```
+#### 添加入口点
+```
+entry_points={
+        'console_scripts': [
+                'talker = py_pubsub.publisher_member_function:main',
+                'listener = py_pubsub.subscriber_member_function:main',
+        ],
+},
+
+```
+#### 构建运行节点
+
+```
+rosdep install -i --from-path src --rosdistro rolling -y
+colcon build --packages-select py_pubsub
+. install/setup.bash
+ros2 run py_pubsub talker
+```
+### 编写简单的服务和客户端
+#### 建立package
+```
+ros2 pkg create --build-type ament_python py_srvcli --dependencies rclpy example_interfaces
+```
+该--dependencies参数会自动将必要的依赖行添加到package.xml. 
+因为您--dependencies在包创建期间使用了该选项，所以您不必手动将依赖项添加到package.xml.
+不过，一如既往，请确保将描述、维护者电子邮件和姓名以及许可证信息添加到package.xml.
+#### 编写节点服务
+ros2_ws/src/py_srvcli/py_srvcli目录中，创建一个名为的新文件service_member_function.py
+```python
+from example_interfaces.srv import AddTwoInts
+
+import rclpy
+from rclpy.node import Node
+
+
+class MinimalService(Node):
+
+    def __init__(self):
+        super().__init__('minimal_service')
+        # 类型 名称 回调
+        self.srv = self.create_service(AddTwoInts, 'add_two_ints', self.add_two_ints_callback)
+
+    def add_two_ints_callback(self, request, response):
+        response.sum = request.a + request.b
+        self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))
+
+        return response
+
+
+def main():
+    rclpy.init()
+
+    minimal_service = MinimalService()
+
+    rclpy.spin(minimal_service)
+
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+要允许命令运行您的节点，您必须将入口点添加到（位于目录中）。ros2 run setup.py
+
+
+#### 编写客户端节点
+在该ros2_ws/src/py_srvcli/py_srvcli目录中，创建一个名为的新文件client_member_function.py并将以下代码粘贴到其中：
+```python
+import sys
+
+from example_interfaces.srv import AddTwoInts
+import rclpy
+from rclpy.node import Node
+
+
+class MinimalClientAsync(Node):
+
+    def __init__(self):
+        super().__init__('minimal_client_async')
+        self.cli = self.create_client(AddTwoInts, 'add_two_ints')
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+        self.req = AddTwoInts.Request()
+
+    def send_request(self, a, b):
+        self.req.a = a
+        self.req.b = b
+        self.future = self.cli.call_async(self.req)
+        rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
+
+
+def main():
+    rclpy.init()
+
+    minimal_client = MinimalClientAsync()
+    response = minimal_client.send_request(int(sys.argv[1]), int(sys.argv[2]))
+    minimal_client.get_logger().info(
+        'Result of add_two_ints: for %d + %d = %d' %
+        (int(sys.argv[1]), int(sys.argv[2]), response.sum))
+
+    minimal_client.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+与服务节点一样，您还必须添加一个入口点才能运行客户端节点。
+```
+entry_points={
+    'console_scripts': [
+        'service = py_srvcli.service_member_function:main',
+        'client = py_srvcli.client_member_function:main',
+    ],
+},
+```
+#### 构建并运行
+##### 启动服务
+```
+rosdep install -i --from-path src --rosdistro rolling -y
+colcon build --packages-select py_srvcli
+. install/setup.bash
+ros2 run py_srvcli service
+```
+##### 启动客户端
+```
+ros2 run py_srvcli client 2 3
+
+```
+
+### 创建自定义 msg 和 srv 文件
+因为python无法自定义msg，所以只能使用c++来实现
+在ros2_ws/src目录创建用c++语言package
+```
+ros2 pkg create --build-type ament_cmake tutorial_interfaces
+```
+#### msg 自定义
+在tutorial_interfaces/msg您刚刚创建的目录中，创建一个新文件，Num.msg使用一行代码声明其数据结构：
+```
+int64 num
+```
+这是一条自定义消息，它传输一个名为 的 64 位整数num。
+
+同样在tutorial_interfaces/msg您刚刚创建的目录中，创建一个名为Sphere.msg以下内​​容的新文件：
+```
+geometry_msgs/Point center
+float64 radius
+```
+此自定义消息使用来自另一个消息包的消息（geometry_msgs/Point在本例中）。
+
+#### srv定义
+回到tutorial_interfaces/srv您刚刚创建的目录，创建一个新文件，AddThreeInts.srv使用以下请求和响应结构调用：
+```
+int64 a
+int64 b
+int64 c
+---
+int64 sum
+```
+是您的自定义服务，它请求名为 、 和 的三个整数a，b并c以名为 的整数响应sum。
+#### 修改CMakeLists.txt
+添加下面内容
+```find_package(geometry_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Num.msg"
+  "msg/Sphere.msg"
+  "srv/AddThreeInts.srv"
+  DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+)
+
+
+```
+#### 修改package.xml
+因为接口依赖rosidl_default_generators于生成特定于语言的代码，所以您需要声明对它的依赖。标签<exec_depend>用于指定运行时或执行阶段的依赖关系，是rosidl_interface_packages包所属的依赖组的名称，使用标签声明<member_of_group>。
+```
+<depend>geometry_msgs</depend>
+
+<build_depend>rosidl_default_generators</build_depend>
+
+<exec_depend>rosidl_default_runtime</exec_depend>
+
+<member_of_group>rosidl_interface_packages</member_of_group>
+```
+#### 构建tutorial_interfaces包
+
+```
+colcon build --packages-select tutorial_interfaces
+. install/setup.bash
+ros2 interface show tutorial_interfaces/msg/Num
+ros2 interface show tutorial_interfaces/msg/Sphere
+ros2 interface show tutorial_interfaces/srv/AddThreeInts
+```
+#### 在包中使用自定义的msg
+```python
+import rclpy
+from rclpy.node import Node
+# 引入消息
+from tutorial_interfaces.msg import Num                            # CHANGE
+
+
+class MinimalPublisher(Node):
+
+    def __init__(self):
+        super().__init__('minimal_publisher')
+        #使用消息
+        self.publisher_ = self.create_publisher(Num, 'topic', 10)  # CHANGE
+        timer_period = 0.5
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+
+    def timer_callback(self):
+        msg = Num()                                                # CHANGE
+        msg.num = self.i                                           # CHANGE
+        self.publisher_.publish(msg)
+        self.get_logger().info('Publishing: "%d"' % msg.num)       # CHANGE
+        self.i += 1
+
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    minimal_publisher = MinimalPublisher()
+
+    rclpy.spin(minimal_publisher)
+
+    minimal_publisher.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+#### 在包中使用srv
+
+```python
+from tutorial_interfaces.srv import AddThreeInts                                                           # CHANGE
+
+import rclpy
+from rclpy.node import Node
+
+
+class MinimalService(Node):
+
+    def __init__(self):
+        super().__init__('minimal_service')
+        self.srv = self.create_service(AddThreeInts, 'add_three_ints', self.add_three_ints_callback)       # CHANGE
+
+    def add_three_ints_callback(self, request, response):
+        response.sum = request.a + request.b + request.c                                                   # CHANGE
+        self.get_logger().info('Incoming request\na: %d b: %d c: %d' % (request.a, request.b, request.c))  # CHANGE
+
+        return response
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    minimal_service = MinimalService()
+
+    rclpy.spin(minimal_service)
+
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+```
