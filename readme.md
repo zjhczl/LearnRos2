@@ -1,3 +1,94 @@
+- [1. ros2安装与卸载](#1-ros2安装与卸载)
+  - [1.1. 安装ros2](#11-安装ros2)
+  - [1.2. 卸载ros2](#12-卸载ros2)
+- [2. 基础工具](#2-基础工具)
+  - [2.1. 节点](#21-节点)
+    - [2.1.1. 启动节点](#211-启动节点)
+    - [2.1.2. 获取节点信息](#212-获取节点信息)
+  - [2.2. topics](#22-topics)
+    - [2.2.1. 显示所有topic](#221-显示所有topic)
+    - [2.2.2. 查看某个主题上发布的数据](#222-查看某个主题上发布的数据)
+    - [2.2.3. 查看数据结构](#223-查看数据结构)
+    - [2.2.4. 发布主题](#224-发布主题)
+  - [2.3. services](#23-services)
+    - [2.3.1. 获取服务列表](#231-获取服务列表)
+    - [2.3.2. 查看服务类型](#232-查看服务类型)
+    - [2.3.3. 服务查找](#233-服务查找)
+    - [2.3.4. 查看服务参数的结构](#234-查看服务参数的结构)
+    - [2.3.5. 服务调用](#235-服务调用)
+  - [2.4. 参数](#24-参数)
+    - [2.4.1. 获取节点参数列表](#241-获取节点参数列表)
+    - [2.4.2. 参数获取](#242-参数获取)
+    - [2.4.3. 设置参数值](#243-设置参数值)
+    - [2.4.4. 参数转存](#244-参数转存)
+    - [2.4.5. 加载参数](#245-加载参数)
+    - [2.4.6. 启动时加载参数文件](#246-启动时加载参数文件)
+  - [2.5. 动作](#25-动作)
+    - [2.5.1. 列出所有action](#251-列出所有action)
+    - [2.5.2. 查看action信息](#252-查看action信息)
+    - [2.5.3. action操作类型](#253-action操作类型)
+    - [2.5.4. 发送动作](#254-发送动作)
+  - [2.6. ros bag](#26-ros-bag)
+    - [2.6.1. 记录包](#261-记录包)
+    - [2.6.2. 查看包录制信息](#262-查看包录制信息)
+    - [2.6.3. 包回放](#263-包回放)
+- [3. 客户端库](#3-客户端库)
+  - [3.1. 用于colcon构建包](#31-用于colcon构建包)
+    - [3.1.1. 安装 colcon](#311-安装-colcon)
+    - [3.1.2. 创建工作区](#312-创建工作区)
+    - [3.1.3. 构建工作区](#313-构建工作区)
+    - [3.1.4. 运行测试](#314-运行测试)
+    - [3.1.5. colcon\_cd](#315-colcon_cd)
+    - [3.1.6. ~~](#316-)
+  - [3.2. 创建工作区](#32-创建工作区)
+    - [3.2.1. 新建文件夹](#321-新建文件夹)
+    - [3.2.2. 克隆一个样本仓库](#322-克隆一个样本仓库)
+    - [3.2.3. 解决依赖](#323-解决依赖)
+    - [3.2.4. 使用 colcon 构建工作区](#324-使用-colcon-构建工作区)
+    - [3.2.5. 源覆盖](#325-源覆盖)
+    - [3.2.6. 总结](#326-总结)
+  - [3.3. 创建package](#33-创建package)
+    - [3.3.1. 什么是 ROS 2 包？](#331-什么是-ros-2-包)
+    - [3.3.2. 一个package包含什么](#332-一个package包含什么)
+    - [3.3.3. 工作区中的包](#333-工作区中的包)
+    - [3.3.4. 创建package](#334-创建package)
+    - [3.3.5. build package](#335-build-package)
+    - [3.3.6. Source the setup file](#336-source-the-setup-file)
+    - [3.3.7. 使用包](#337-使用包)
+    - [3.3.8. 修改package.xml setup.py文件](#338-修改packagexml-setuppy文件)
+  - [3.4. 编写简单的发布者和订阅者](#34-编写简单的发布者和订阅者)
+    - [3.4.1. 编写发布者节点](#341-编写发布者节点)
+    - [3.4.2. 添加入口点](#342-添加入口点)
+    - [3.4.3. 构建运行节点](#343-构建运行节点)
+  - [3.5. 编写简单的服务和客户端](#35-编写简单的服务和客户端)
+    - [3.5.1. 建立package](#351-建立package)
+    - [3.5.2. 编写节点服务](#352-编写节点服务)
+    - [3.5.3. 编写客户端节点](#353-编写客户端节点)
+    - [3.5.4. 构建并运行](#354-构建并运行)
+      - [3.5.4.1. 启动服务](#3541-启动服务)
+      - [3.5.4.2. 启动客户端](#3542-启动客户端)
+  - [3.6. 创建自定义 msg 和 srv 文件](#36-创建自定义-msg-和-srv-文件)
+    - [3.6.1. msg 自定义](#361-msg-自定义)
+    - [3.6.2. srv定义](#362-srv定义)
+    - [3.6.3. 修改CMakeLists.txt](#363-修改cmakeliststxt)
+    - [3.6.4. 修改package.xml](#364-修改packagexml)
+    - [3.6.5. 构建tutorial\_interfaces包](#365-构建tutorial_interfaces包)
+    - [3.6.6. 在包中使用自定义的msg](#366-在包中使用自定义的msg)
+    - [3.6.7. 在包中使用srv](#367-在包中使用srv)
+  - [3.7. 实现自定义接口](#37-实现自定义接口)
+    - [3.7.1. 背景](#371-背景)
+    - [3.7.2. 创建一个package](#372-创建一个package)
+    - [3.7.3. 2 创建消息文件](#373-2-创建消息文件)
+    - [3.7.4. 构建一个msg文件](#374-构建一个msg文件)
+  - [3.8. 在类中使用参数 (Python)](#38-在类中使用参数-python)
+    - [3.8.1. 创建package](#381-创建package)
+    - [编写python节点](#编写python节点)
+    - [添加入口点](#添加入口点)
+  - [创建和使用插件 (C++)](#创建和使用插件-c)
+    - [背景](#背景)
+    - [安装pluginlib](#安装pluginlib)
+    - [任务](#任务)
+    - [创建基本package](#创建基本package)
 
 ## 1. ros2安装与卸载
 ### 1.1. 安装ros2
@@ -703,3 +794,174 @@ if __name__ == '__main__':
 回想一下，接口目前只能在 CMake 包中定义。但是，可以在 CMake 包中包含 Python 库和节点（使用ament_cmake_python），因此您可以在一个包中一起定义接口和 Python 节点。为了简单起见，我们将在此处使用 CMake 包和 C++ 节点。
 
 本教程将重点介绍 msg 接口类型，但此处的步骤适用于所有接口类型。
+#### 3.7.2. 创建一个package
+在src目录：
+```
+ros2 pkg create --build-type ament_cmake more_interfaces
+mkdir more_interfaces/msg
+```
+#### 3.7.3. 2 创建消息文件
+在里面more_interfaces/msg，创建一个新文件AddressBook.msg
+
+粘贴以下代码以创建一条消息，用于携带有关个人的信息：
+```
+bool FEMALE=true
+bool MALE=false
+
+string first_name
+string last_name
+bool gender
+uint8 age
+string address
+```
+此消息由 5 个字段组成：
+
+first_name：字符串类型
+
+last_name：字符串类型
+
+性别：bool 类型，可以是 MALE 或 FEMALE
+
+年龄：uint8类型
+
+地址：字符串类型
+
+请注意，可以为消息定义中的字段设置默认值。有关自定义界面的更多方法，请参阅关于 ROS 2 界面。
+
+接下来，我们需要确保将 msg 文件转换为 C++、Python 和其他语言的源代码。
+#### 3.7.4. 构建一个msg文件
+打开package.xml，并添加以下行：
+
+```
+<buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+<exec_depend>rosidl_default_runtime</exec_depend>
+
+<member_of_group>rosidl_interface_packages</member_of_group>
+```
+请注意，在构建时，我们需要rosidl_default_generators，而在运行时，我们只需要rosidl_default_runtime.
+
+打开CMakeLists.txt并添加以下行：
+找到从 msg/srv 文件生成消息代码的包：
+```
+find_package(rosidl_default_generators REQUIRED)
+```
+声明要生成的消息列表：
+```
+set(msg_files
+  "msg/AddressBook.msg"
+)
+```
+通过手动添加 .msg 文件，我们确保 CMake 知道在您添加其他 .msg 文件后何时必须重新配置项目。
+
+生成消息：
+```
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+)
+```
+还要确保导出消息运行时依赖项：
+```
+ament_export_dependencies(rosidl_default_runtime)
+```
+现在您已准备好从 msg 定义生成源文件。我们现在将跳过编译步骤，因为我们将在下面的第 4 步中一起完成。
+### 3.8. 在类中使用参数 (Python)
+#### 3.8.1. 创建package
+```
+ros2 pkg create --build-type ament_python python_parameters --dependencies rclpy
+```
+因为您--dependencies在包创建期间使用了该选项，所以您不必手动将依赖项添加到package.xml或CMakeLists.txt。
+不过，一如既往，请确保将描述、维护者电子邮件和姓名以及许可证信息添加到package.xml.
+```
+<description>Python parameter tutorial</description>
+<maintainer email="you@email.com">Your Name</maintainer>
+<license>Apache License 2.0</license>
+```
+#### 编写python节点
+在该ros2_ws/src/python_parameters/python_parameters目录中，创建一个名为的新文件python_parameters_node.py并将以下代码粘贴到其中：
+```python 
+import rclpy
+import rclpy.node
+
+class MinimalParam(rclpy.node.Node):
+    def __init__(self):
+        super().__init__('minimal_param_node')
+
+        self.declare_parameter('my_parameter', 'world')
+
+        self.timer = self.create_timer(1, self.timer_callback)
+
+    def timer_callback(self):
+        my_param = self.get_parameter('my_parameter').get_parameter_value().string_value
+
+        self.get_logger().info('Hello %s!' % my_param)
+
+        my_new_param = rclpy.parameter.Parameter(
+            'my_parameter',
+            rclpy.Parameter.Type.STRING,
+            'world'
+        )
+        all_new_parameters = [my_new_param]
+        self.set_parameters(all_new_parameters)
+
+def main():
+    rclpy.init()
+    node = MinimalParam()
+    rclpy.spin(node)
+
+if __name__ == '__main__':
+    main()
+```
+#### 添加入口点
+package.xml
+```
+maintainer='YourName',
+maintainer_email='you@email.com',
+description='Python parameter tutorial',
+license='Apache License 2.0',
+```
+setup.py
+```python
+entry_points={
+    'console_scripts': [
+        'minimal_param_node = python_parameters.python_parameters_node:main',
+    ],
+},
+```
+### 创建和使用插件 (C++)
+#### 背景
+pluginlib 是一个 C++ 库，用于从 ROS 包中加载和卸载插件。插件是从运行时库（即共享对象、动态链接库）加载的动态可加载类。使用 pluginlib，人们不必将他们的应用程序显式链接到包含类的库——相反，pluginlib 可以在任何时候打开一个包含导出类的库，而无需应用程序事先知道该库或包含类定义的头文件。插件可用于在不需要应用程序源代码的情况下扩展/修改应用程序行为。
+#### 安装pluginlib
+```
+sudo apt install ros-rolling-pluginlib
+```
+
+#### 任务
+在本教程中，您将创建两个新包，一个定义基类，另一个提供插件。基类将定义一个通用的多边形类，然后我们的插件将定义特定的形状。
+#### 创建基本package
+在src目录
+```
+ros2 pkg create --build-type ament_cmake polygon_base --dependencies pluginlib --node-name area_node
+```
+创建ros2_ws/src/polygon_base/include/polygon_base/regular_polygon.hpp
+```
+#ifndef POLYGON_BASE_REGULAR_POLYGON_HPP
+#define POLYGON_BASE_REGULAR_POLYGON_HPP
+
+namespace polygon_base
+{
+  class RegularPolygon
+  {
+    public:
+      virtual void initialize(double side_length) = 0;
+      virtual double area() = 0;
+      virtual ~RegularPolygon(){}
+
+    protected:
+      RegularPolygon(){}
+  };
+}  // namespace polygon_base
+
+#endif  // POLYGON_BASE_REGULAR_POLYGON_HPP
+```
+
