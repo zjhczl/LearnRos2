@@ -82,13 +82,19 @@
     - [3.7.4. 构建一个msg文件](#374-构建一个msg文件)
   - [3.8. 在类中使用参数 (Python)](#38-在类中使用参数-python)
     - [3.8.1. 创建package](#381-创建package)
-    - [编写python节点](#编写python节点)
-    - [添加入口点](#添加入口点)
-  - [创建和使用插件 (C++)](#创建和使用插件-c)
-    - [背景](#背景)
-    - [安装pluginlib](#安装pluginlib)
-    - [任务](#任务)
-    - [创建基本package](#创建基本package)
+    - [3.8.2. 编写python节点](#382-编写python节点)
+    - [3.8.3. 添加入口点](#383-添加入口点)
+  - [3.9. 创建和使用插件 (C++)](#39-创建和使用插件-c)
+    - [3.9.1. 背景](#391-背景)
+    - [3.9.2. 安装pluginlib](#392-安装pluginlib)
+    - [3.9.3. 任务](#393-任务)
+    - [3.9.4. 创建基本package](#394-创建基本package)
+  - [3.10. Creating and using plugins (C++)](#310-creating-and-using-plugins-c)
+    - [安装pluginlib 库](#安装pluginlib-库)
+    - [创建package](#创建package)
+    - [创建hpp文件](#创建hpp文件)
+    - [修改CMakeLists.txt在命令后添加以下行ament\_target\_dependencies：](#修改cmakeliststxt在命令后添加以下行ament_target_dependencies)
+
 
 ## 1. ros2安装与卸载
 ### 1.1. 安装ros2
@@ -877,7 +883,7 @@ ros2 pkg create --build-type ament_python python_parameters --dependencies rclpy
 <maintainer email="you@email.com">Your Name</maintainer>
 <license>Apache License 2.0</license>
 ```
-#### 编写python节点
+#### 3.8.2. 编写python节点
 在该ros2_ws/src/python_parameters/python_parameters目录中，创建一个名为的新文件python_parameters_node.py并将以下代码粘贴到其中：
 ```python 
 import rclpy
@@ -912,7 +918,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-#### 添加入口点
+#### 3.8.3. 添加入口点
 package.xml
 ```
 maintainer='YourName',
@@ -928,17 +934,17 @@ entry_points={
     ],
 },
 ```
-### 创建和使用插件 (C++)
-#### 背景
+### 3.9. 创建和使用插件 (C++)
+#### 3.9.1. 背景
 pluginlib 是一个 C++ 库，用于从 ROS 包中加载和卸载插件。插件是从运行时库（即共享对象、动态链接库）加载的动态可加载类。使用 pluginlib，人们不必将他们的应用程序显式链接到包含类的库——相反，pluginlib 可以在任何时候打开一个包含导出类的库，而无需应用程序事先知道该库或包含类定义的头文件。插件可用于在不需要应用程序源代码的情况下扩展/修改应用程序行为。
-#### 安装pluginlib
+#### 3.9.2. 安装pluginlib
 ```
 sudo apt install ros-rolling-pluginlib
 ```
 
-#### 任务
+#### 3.9.3. 任务
 在本教程中，您将创建两个新包，一个定义基类，另一个提供插件。基类将定义一个通用的多边形类，然后我们的插件将定义特定的形状。
-#### 创建基本package
+#### 3.9.4. 创建基本package
 在src目录
 ```
 ros2 pkg create --build-type ament_cmake polygon_base --dependencies pluginlib --node-name area_node
@@ -964,4 +970,54 @@ namespace polygon_base
 
 #endif  // POLYGON_BASE_REGULAR_POLYGON_HPP
 ```
+略······
+https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Pluginlib.html
+### 3.10. Creating and using plugins (C++)
+pluginlib 是一个 C++ 库，用于从 ROS 包中加载和卸载插件。插件是从运行时库（即共享对象、动态链接库）加载的动态可加载类。使用 pluginlib，人们不必将他们的应用程序显式链接到包含类的库——相反，pluginlib 可以在任何时候打开一个包含导出类的库，而无需应用程序事先知道该库或包含类定义的头文件。插件可用于在不需要应用程序源代码的情况下扩展/修改应用程序行为。
+#### 安装pluginlib 库
+```
+sudo apt-get install ros-rolling-pluginlib
+```
+#### 创建package
+在src目录
 
+```
+ros2 pkg create --build-type ament_cmake polygon_base --dependencies pluginlib --node-name area_node
+```
+#### 创建hpp文件
+ros2_ws/src/polygon_base/include/polygon_base/regular_polygon.hpp，然后将以下内容粘贴到其中：
+```
+#ifndef POLYGON_BASE_REGULAR_POLYGON_HPP
+#define POLYGON_BASE_REGULAR_POLYGON_HPP
+
+namespace polygon_base
+{
+  class RegularPolygon
+  {
+    public:
+      virtual void initialize(double side_length) = 0;
+      virtual double area() = 0;
+      virtual ~RegularPolygon(){}
+
+    protected:
+      RegularPolygon(){}
+  };
+}  // namespace polygon_base
+
+#endif  // POLYGON_BASE_REGULAR_POLYGON_HPP
+```
+上面的代码应该是不言自明的……我们正在创建一个名为RegularPolygon. 需要注意的一件事是初始化方法的存在。使用pluginlib，需要一个不带参数的构造函数，因此如果需要类的任何参数，我们使用 initialize 方法将它们传递给对象。
+
+#### 修改CMakeLists.txt在命令后添加以下行ament_target_dependencies：
+```
+install(TARGETS area_node
+  DESTINATION lib/${PROJECT_NAME})
+
+ament_export_include_directories(
+    include
+  )
+install(
+    DIRECTORY include/
+    DESTINATION include
+  )
+```
