@@ -1,0 +1,9 @@
+{
+  "package_name": "learning_interface",
+  "non_idl_tuples": [
+    "/home/zj/cx/learnros2/ros2_ws/src/learning_interface:msg/ObjectPosition.msg",
+    "/home/zj/cx/learnros2/ros2_ws/src/learning_interface:srv/AddTwoInts.srv",
+    "/home/zj/cx/learnros2/ros2_ws/src/learning_interface:srv/GetObjectPosition.srv",
+    "/home/zj/cx/learnros2/ros2_ws/src/learning_interface:action/MoveCircle.action"
+  ]
+}

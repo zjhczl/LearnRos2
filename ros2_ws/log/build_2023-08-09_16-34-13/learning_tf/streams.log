@@ -1,0 +1,51 @@
+[1.150s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_tf': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_tf/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_tf build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_tf/install.log --single-version-externally-managed
+[1.255s] running egg_info
+[1.255s] creating ../../build/learning_tf/learning_tf.egg-info
+[1.255s] writing ../../build/learning_tf/learning_tf.egg-info/PKG-INFO
+[1.255s] writing dependency_links to ../../build/learning_tf/learning_tf.egg-info/dependency_links.txt
+[1.255s] writing entry points to ../../build/learning_tf/learning_tf.egg-info/entry_points.txt
+[1.255s] writing requirements to ../../build/learning_tf/learning_tf.egg-info/requires.txt
+[1.255s] writing top-level names to ../../build/learning_tf/learning_tf.egg-info/top_level.txt
+[1.256s] writing manifest file '../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[1.276s] reading manifest file '../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[1.276s] writing manifest file '../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[1.277s] running build
+[1.277s] running build_py
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf
+[1.277s] copying learning_tf/static_tf_broadcaster.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf
+[1.277s] copying learning_tf/tf_listener.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf
+[1.277s] copying learning_tf/turtle_following.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf
+[1.277s] copying learning_tf/turtle_tf_broadcaster.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf
+[1.277s] copying learning_tf/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf
+[1.278s] running install
+[1.278s] running install_lib
+[1.278s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf
+[1.280s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf/static_tf_broadcaster.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf
+[1.281s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf/tf_listener.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf
+[1.281s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf/turtle_following.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf
+[1.282s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf/turtle_tf_broadcaster.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf
+[1.282s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build/lib/learning_tf/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf
+[1.283s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf/static_tf_broadcaster.py to static_tf_broadcaster.cpython-38.pyc
+[1.285s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf/tf_listener.py to tf_listener.cpython-38.pyc
+[1.285s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf/turtle_following.py to turtle_following.cpython-38.pyc
+[1.285s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf/turtle_tf_broadcaster.py to turtle_tf_broadcaster.cpython-38.pyc
+[1.285s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf/__init__.py to __init__.cpython-38.pyc
+[1.286s] running install_data
+[1.287s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/ament_index
+[1.287s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/ament_index/resource_index
+[1.287s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/ament_index/resource_index/packages
+[1.287s] copying resource/learning_tf -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/ament_index/resource_index/packages
+[1.287s] copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/learning_tf
+[1.287s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/learning_tf/launch
+[1.287s] copying launch/turtle_following_demo.launch.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_tf/share/learning_tf/launch
+[1.287s] running install_egg_info
+[1.288s] Copying ../../build/learning_tf/learning_tf.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf-0.0.0-py3.8.egg-info
+[1.289s] running install_scripts
+[1.294s] Installing static_tf_broadcaster script to /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/learning_tf
+[1.294s] Installing tf_listener script to /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/learning_tf
+[1.294s] Installing turtle_following script to /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/learning_tf
+[1.294s] Installing turtle_tf_broadcaster script to /home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/learning_tf
+[1.294s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_tf/install.log'
+[1.333s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_tf' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_tf/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_tf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_tf build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_tf/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_tf/install.log --single-version-externally-managed

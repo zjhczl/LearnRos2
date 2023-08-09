@@ -1,0 +1,57 @@
+[0.544s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_topic': AMENT_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface LD_LIBRARY_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_topic/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages:/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_topic build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_topic/install.log --single-version-externally-managed
+[0.639s] running egg_info
+[0.639s] creating ../../build/learning_topic/learning_topic.egg-info
+[0.639s] writing ../../build/learning_topic/learning_topic.egg-info/PKG-INFO
+[0.639s] writing dependency_links to ../../build/learning_topic/learning_topic.egg-info/dependency_links.txt
+[0.640s] writing entry points to ../../build/learning_topic/learning_topic.egg-info/entry_points.txt
+[0.640s] writing requirements to ../../build/learning_topic/learning_topic.egg-info/requires.txt
+[0.640s] writing top-level names to ../../build/learning_topic/learning_topic.egg-info/top_level.txt
+[0.640s] writing manifest file '../../build/learning_topic/learning_topic.egg-info/SOURCES.txt'
+[0.660s] reading manifest file '../../build/learning_topic/learning_topic.egg-info/SOURCES.txt'
+[0.661s] writing manifest file '../../build/learning_topic/learning_topic.egg-info/SOURCES.txt'
+[0.661s] running build
+[0.661s] running build_py
+[0.661s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build
+[0.661s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib
+[0.661s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.661s] copying learning_topic/topic_helloworld_pub.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.661s] copying learning_topic/interface_object_sub.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.661s] copying learning_topic/topic_webcam_sub.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.661s] copying learning_topic/topic_webcam_pub.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.662s] copying learning_topic/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.662s] copying learning_topic/topic_helloworld_sub.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.662s] copying learning_topic/interface_object_pub.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic
+[0.662s] running install
+[0.662s] running install_lib
+[0.662s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.662s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/topic_helloworld_pub.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.662s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/interface_object_sub.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.662s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/topic_webcam_sub.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.663s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/topic_webcam_pub.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.663s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.663s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/topic_helloworld_sub.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.663s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build/lib/learning_topic/interface_object_pub.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/topic_helloworld_pub.py to topic_helloworld_pub.cpython-38.pyc
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/interface_object_sub.py to interface_object_sub.cpython-38.pyc
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/topic_webcam_sub.py to topic_webcam_sub.cpython-38.pyc
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/topic_webcam_pub.py to topic_webcam_pub.cpython-38.pyc
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/__init__.py to __init__.cpython-38.pyc
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/topic_helloworld_sub.py to topic_helloworld_sub.cpython-38.pyc
+[0.663s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic/interface_object_pub.py to interface_object_pub.cpython-38.pyc
+[0.663s] running install_data
+[0.663s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_topic/share/ament_index
+[0.663s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_topic/share/ament_index/resource_index
+[0.664s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_topic/share/ament_index/resource_index/packages
+[0.664s] copying resource/learning_topic -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/share/ament_index/resource_index/packages
+[0.664s] copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/learning_topic/share/learning_topic
+[0.664s] running install_egg_info
+[0.664s] Copying ../../build/learning_topic/learning_topic.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages/learning_topic-0.0.0-py3.8.egg-info
+[0.665s] running install_scripts
+[0.675s] Installing interface_object_pub script to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/learning_topic
+[0.675s] Installing interface_object_sub script to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/learning_topic
+[0.675s] Installing topic_helloworld_pub script to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/learning_topic
+[0.675s] Installing topic_helloworld_sub script to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/learning_topic
+[0.675s] Installing topic_webcam_pub script to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/learning_topic
+[0.675s] Installing topic_webcam_sub script to /home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/learning_topic
+[0.675s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_topic/install.log'
+[0.697s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_topic' returned '0': AMENT_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface LD_LIBRARY_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_topic/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_topic/lib/python3.8/site-packages:/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_topic build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_topic/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_topic/install.log --single-version-externally-managed

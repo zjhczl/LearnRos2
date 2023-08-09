@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/rtk/rtk.egg-info
+writing ../../build/rtk/rtk.egg-info/PKG-INFO
+writing dependency_links to ../../build/rtk/rtk.egg-info/dependency_links.txt
+writing entry points to ../../build/rtk/rtk.egg-info/entry_points.txt
+writing requirements to ../../build/rtk/rtk.egg-info/requires.txt
+writing top-level names to ../../build/rtk/rtk.egg-info/top_level.txt
+writing manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+reading manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+writing manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/zj/cx/learnros2/ros2_ws/build/rtk/build
+creating /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib
+creating /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+copying rtk/test.py -> /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+copying rtk/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+running install
+running install_lib
+creating /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+copying /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk/test.py -> /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+copying /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+byte-compiling /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk/test.py to test.cpython-38.pyc
+byte-compiling /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index
+creating /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index/resource_index
+creating /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index/resource_index/packages
+copying resource/rtk -> /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index/resource_index/packages
+copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/rtk/share/rtk
+running install_egg_info
+Copying ../../build/rtk/rtk.egg-info to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk-0.0.0-py3.8.egg-info
+running install_scripts
+Installing test script to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/rtk
+writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/rtk/install.log'

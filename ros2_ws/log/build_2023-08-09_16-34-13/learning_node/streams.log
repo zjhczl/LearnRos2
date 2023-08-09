@@ -1,0 +1,49 @@
+[1.162s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_node': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_node/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_node build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_node/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_node/install.log --single-version-externally-managed
+[1.263s] running egg_info
+[1.263s] creating ../../build/learning_node/learning_node.egg-info
+[1.263s] writing ../../build/learning_node/learning_node.egg-info/PKG-INFO
+[1.263s] writing dependency_links to ../../build/learning_node/learning_node.egg-info/dependency_links.txt
+[1.264s] writing entry points to ../../build/learning_node/learning_node.egg-info/entry_points.txt
+[1.264s] writing requirements to ../../build/learning_node/learning_node.egg-info/requires.txt
+[1.264s] writing top-level names to ../../build/learning_node/learning_node.egg-info/top_level.txt
+[1.264s] writing manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[1.281s] reading manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[1.282s] writing manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[1.282s] running build
+[1.282s] running build_py
+[1.282s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_node/build
+[1.282s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib
+[1.282s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node
+[1.282s] copying learning_node/node_helloworld_class.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node
+[1.282s] copying learning_node/node_object.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node
+[1.282s] copying learning_node/node_helloworld.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node
+[1.282s] copying learning_node/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node
+[1.282s] copying learning_node/node_object_webcam.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node
+[1.282s] running install
+[1.283s] running install_lib
+[1.283s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node
+[1.283s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node/node_helloworld_class.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node
+[1.283s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node/node_object.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node
+[1.283s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node/node_helloworld.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node
+[1.283s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node
+[1.283s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_node/build/lib/learning_node/node_object_webcam.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node
+[1.284s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node/node_helloworld_class.py to node_helloworld_class.cpython-38.pyc
+[1.284s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node/node_object.py to node_object.cpython-38.pyc
+[1.284s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node/node_helloworld.py to node_helloworld.cpython-38.pyc
+[1.285s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node/__init__.py to __init__.cpython-38.pyc
+[1.285s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node/node_object_webcam.py to node_object_webcam.cpython-38.pyc
+[1.285s] running install_data
+[1.285s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_node/share/ament_index
+[1.285s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_node/share/ament_index/resource_index
+[1.285s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_node/share/ament_index/resource_index/packages
+[1.285s] copying resource/learning_node -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/share/ament_index/resource_index/packages
+[1.285s] copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/learning_node/share/learning_node
+[1.285s] running install_egg_info
+[1.286s] Copying ../../build/learning_node/learning_node.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node-0.0.0-py3.8.egg-info
+[1.286s] running install_scripts
+[1.297s] Installing node_helloworld script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[1.297s] Installing node_helloworld_class script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[1.297s] Installing node_object script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[1.297s] Installing node_object_webcam script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[1.298s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_node/install.log'
+[1.323s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_node' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_node/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_node build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_node/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_node/install.log --single-version-externally-managed

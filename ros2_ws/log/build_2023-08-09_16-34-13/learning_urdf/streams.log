@@ -1,0 +1,50 @@
+[1.147s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_urdf': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_urdf/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_urdf build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/install.log --single-version-externally-managed
+[1.248s] running egg_info
+[1.248s] creating ../../build/learning_urdf/learning_urdf.egg-info
+[1.248s] writing ../../build/learning_urdf/learning_urdf.egg-info/PKG-INFO
+[1.248s] writing dependency_links to ../../build/learning_urdf/learning_urdf.egg-info/dependency_links.txt
+[1.248s] writing entry points to ../../build/learning_urdf/learning_urdf.egg-info/entry_points.txt
+[1.248s] writing requirements to ../../build/learning_urdf/learning_urdf.egg-info/requires.txt
+[1.248s] writing top-level names to ../../build/learning_urdf/learning_urdf.egg-info/top_level.txt
+[1.249s] writing manifest file '../../build/learning_urdf/learning_urdf.egg-info/SOURCES.txt'
+[1.268s] reading manifest file '../../build/learning_urdf/learning_urdf.egg-info/SOURCES.txt'
+[1.269s] writing manifest file '../../build/learning_urdf/learning_urdf.egg-info/SOURCES.txt'
+[1.269s] running build
+[1.269s] running build_py
+[1.269s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build
+[1.269s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build/lib
+[1.269s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build/lib/learning_urdf
+[1.269s] copying learning_urdf/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build/lib/learning_urdf
+[1.269s] running install
+[1.270s] running install_lib
+[1.270s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf
+[1.270s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build/lib/learning_urdf/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf
+[1.271s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf/__init__.py to __init__.cpython-38.pyc
+[1.275s] running install_data
+[1.275s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/ament_index
+[1.276s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/ament_index/resource_index
+[1.276s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/ament_index/resource_index/packages
+[1.276s] copying resource/learning_urdf -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/ament_index/resource_index/packages
+[1.276s] copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/launch
+[1.277s] copying launch/display.launch.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/launch
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf
+[1.277s] copying urdf/mbot_with_kinect.urdf -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf
+[1.277s] copying urdf/mbot_with_laser.urdf -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf
+[1.277s] copying urdf/mbot_base.urdf -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf
+[1.277s] copying urdf/mbot_with_camera.urdf -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[1.277s] copying urdf/sensors/kinect_gazebo.xacro -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[1.277s] copying urdf/sensors/lidar_gazebo.xacro -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[1.277s] copying urdf/sensors/camera_gazebo.xacro -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[1.277s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/meshes
+[1.277s] copying meshes/kinect.tga -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/meshes
+[1.277s] copying meshes/kinect.jpg -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/meshes
+[1.277s] copying meshes/kinect.dae -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/meshes
+[1.278s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/rviz
+[1.279s] copying rviz/urdf.rviz -> /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/share/learning_urdf/rviz
+[1.279s] running install_egg_info
+[1.280s] Copying ../../build/learning_urdf/learning_urdf.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf-0.0.0-py3.8.egg-info
+[1.280s] running install_scripts
+[1.285s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_urdf/install.log'
+[1.320s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_urdf' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_urdf/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_urdf build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_urdf/install.log --single-version-externally-managed

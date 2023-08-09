@@ -1,0 +1,41 @@
+[0.549s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_action': AMENT_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface LD_LIBRARY_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_action/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages:/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_action build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_action/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_action/install.log --single-version-externally-managed
+[0.646s] running egg_info
+[0.646s] creating ../../build/learning_action/learning_action.egg-info
+[0.646s] writing ../../build/learning_action/learning_action.egg-info/PKG-INFO
+[0.646s] writing dependency_links to ../../build/learning_action/learning_action.egg-info/dependency_links.txt
+[0.646s] writing entry points to ../../build/learning_action/learning_action.egg-info/entry_points.txt
+[0.646s] writing requirements to ../../build/learning_action/learning_action.egg-info/requires.txt
+[0.646s] writing top-level names to ../../build/learning_action/learning_action.egg-info/top_level.txt
+[0.647s] writing manifest file '../../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[0.666s] reading manifest file '../../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[0.666s] writing manifest file '../../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[0.666s] running build
+[0.666s] running build_py
+[0.666s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_action/build
+[0.666s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib
+[0.666s] creating /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action
+[0.667s] copying learning_action/action_move_client.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action
+[0.667s] copying learning_action/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action
+[0.667s] copying learning_action/action_move_server.py -> /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action
+[0.667s] running install
+[0.667s] running install_lib
+[0.667s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action
+[0.667s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action/action_move_client.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action
+[0.668s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action
+[0.668s] copying /home/zj/cx/learnros2/ros2_ws/build/learning_action/build/lib/learning_action/action_move_server.py -> /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action
+[0.668s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action/action_move_client.py to action_move_client.cpython-38.pyc
+[0.668s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action/__init__.py to __init__.cpython-38.pyc
+[0.669s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action/action_move_server.py to action_move_server.cpython-38.pyc
+[0.669s] running install_data
+[0.670s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_action/share/ament_index
+[0.670s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_action/share/ament_index/resource_index
+[0.670s] creating /home/zj/cx/learnros2/ros2_ws/install/learning_action/share/ament_index/resource_index/packages
+[0.670s] copying resource/learning_action -> /home/zj/cx/learnros2/ros2_ws/install/learning_action/share/ament_index/resource_index/packages
+[0.670s] copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/learning_action/share/learning_action
+[0.670s] running install_egg_info
+[0.671s] Copying ../../build/learning_action/learning_action.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages/learning_action-0.0.0-py3.8.egg-info
+[0.671s] running install_scripts
+[0.680s] Installing action_move_client script to /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/learning_action
+[0.680s] Installing action_move_server script to /home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/learning_action
+[0.680s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_action/install.log'
+[0.696s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_action' returned '0': AMENT_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface LD_LIBRARY_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_action/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_action/lib/python3.8/site-packages:/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_action build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_action/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_action/install.log --single-version-externally-managed

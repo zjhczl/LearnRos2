@@ -1,0 +1,37 @@
+[2.082s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/rtk': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/rtk/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rtk build --build-base /home/zj/cx/learnros2/ros2_ws/build/rtk/build install --record /home/zj/cx/learnros2/ros2_ws/build/rtk/install.log --install-scripts $base/lib/rtk --single-version-externally-managed
+[2.215s] running egg_info
+[2.216s] creating ../../build/rtk/rtk.egg-info
+[2.216s] writing ../../build/rtk/rtk.egg-info/PKG-INFO
+[2.216s] writing dependency_links to ../../build/rtk/rtk.egg-info/dependency_links.txt
+[2.216s] writing entry points to ../../build/rtk/rtk.egg-info/entry_points.txt
+[2.216s] writing requirements to ../../build/rtk/rtk.egg-info/requires.txt
+[2.216s] writing top-level names to ../../build/rtk/rtk.egg-info/top_level.txt
+[2.217s] writing manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.238s] reading manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.238s] writing manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.239s] running build
+[2.239s] running build_py
+[2.239s] creating /home/zj/cx/learnros2/ros2_ws/build/rtk/build
+[2.239s] creating /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib
+[2.239s] creating /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+[2.239s] copying rtk/test.py -> /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+[2.239s] copying rtk/__init__.py -> /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+[2.239s] running install
+[2.239s] running install_lib
+[2.240s] creating /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+[2.240s] copying /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk/test.py -> /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+[2.240s] copying /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk/__init__.py -> /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+[2.240s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk/test.py to test.cpython-38.pyc
+[2.241s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk/__init__.py to __init__.cpython-38.pyc
+[2.241s] running install_data
+[2.242s] creating /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index
+[2.242s] creating /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index/resource_index
+[2.242s] creating /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index/resource_index/packages
+[2.242s] copying resource/rtk -> /home/zj/cx/learnros2/ros2_ws/install/rtk/share/ament_index/resource_index/packages
+[2.242s] copying package.xml -> /home/zj/cx/learnros2/ros2_ws/install/rtk/share/rtk
+[2.242s] running install_egg_info
+[2.243s] Copying ../../build/rtk/rtk.egg-info to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk-0.0.0-py3.8.egg-info
+[2.243s] running install_scripts
+[2.255s] Installing test script to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/rtk
+[2.255s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/rtk/install.log'
+[2.272s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/rtk' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/rtk/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rtk build --build-base /home/zj/cx/learnros2/ros2_ws/build/rtk/build install --record /home/zj/cx/learnros2/ros2_ws/build/rtk/install.log --install-scripts $base/lib/rtk --single-version-externally-managed
