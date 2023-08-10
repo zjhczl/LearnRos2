@@ -1,4 +1,5 @@
 [console_scripts]
+ntripClient = rtk.ntripClient:main
 ntripServerByCors = rtk.ntripServerByCors:main
 test = rtk.test1:main
 

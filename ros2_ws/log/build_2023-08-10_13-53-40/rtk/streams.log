@@ -1,0 +1,25 @@
+[1.892s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/rtk': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/rtk/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rtk build --build-base /home/zj/cx/learnros2/ros2_ws/build/rtk/build install --record /home/zj/cx/learnros2/ros2_ws/build/rtk/install.log --install-scripts $base/lib/rtk --single-version-externally-managed
+[2.028s] running egg_info
+[2.029s] writing ../../build/rtk/rtk.egg-info/PKG-INFO
+[2.029s] writing dependency_links to ../../build/rtk/rtk.egg-info/dependency_links.txt
+[2.029s] writing entry points to ../../build/rtk/rtk.egg-info/entry_points.txt
+[2.029s] writing requirements to ../../build/rtk/rtk.egg-info/requires.txt
+[2.029s] writing top-level names to ../../build/rtk/rtk.egg-info/top_level.txt
+[2.049s] reading manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.049s] writing manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.050s] running build
+[2.050s] running build_py
+[2.050s] copying rtk/ntripServerByCors.py -> /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk
+[2.050s] running install
+[2.051s] running install_lib
+[2.052s] copying /home/zj/cx/learnros2/ros2_ws/build/rtk/build/lib/rtk/ntripServerByCors.py -> /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk
+[2.052s] byte-compiling /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk/ntripServerByCors.py to ntripServerByCors.cpython-38.pyc
+[2.052s] running install_data
+[2.052s] running install_egg_info
+[2.054s] removing '/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk-0.0.0-py3.8.egg-info' (and everything under it)
+[2.054s] Copying ../../build/rtk/rtk.egg-info to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages/rtk-0.0.0-py3.8.egg-info
+[2.054s] running install_scripts
+[2.069s] Installing ntripServerByCors script to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/rtk
+[2.069s] Installing test script to /home/zj/cx/learnros2/ros2_ws/install/rtk/lib/rtk
+[2.069s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/rtk/install.log'
+[2.095s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/rtk' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/rtk/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rtk build --build-base /home/zj/cx/learnros2/ros2_ws/build/rtk/build install --record /home/zj/cx/learnros2/ros2_ws/build/rtk/install.log --install-scripts $base/lib/rtk --single-version-externally-managed

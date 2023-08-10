@@ -1,0 +1,20 @@
+[1.899s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_gazebo': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_gazebo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_gazebo build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/install.log --single-version-externally-managed
+[2.047s] running egg_info
+[2.048s] writing ../../build/learning_gazebo/learning_gazebo.egg-info/PKG-INFO
+[2.048s] writing dependency_links to ../../build/learning_gazebo/learning_gazebo.egg-info/dependency_links.txt
+[2.048s] writing entry points to ../../build/learning_gazebo/learning_gazebo.egg-info/entry_points.txt
+[2.048s] writing requirements to ../../build/learning_gazebo/learning_gazebo.egg-info/requires.txt
+[2.048s] writing top-level names to ../../build/learning_gazebo/learning_gazebo.egg-info/top_level.txt
+[2.075s] reading manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[2.076s] writing manifest file '../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[2.076s] running build
+[2.076s] running build_py
+[2.076s] running install
+[2.077s] running install_lib
+[2.078s] running install_data
+[2.078s] running install_egg_info
+[2.079s] removing '/home/zj/cx/learnros2/ros2_ws/install/learning_gazebo/lib/python3.8/site-packages/learning_gazebo-0.0.0-py3.8.egg-info' (and everything under it)
+[2.079s] Copying ../../build/learning_gazebo/learning_gazebo.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_gazebo/lib/python3.8/site-packages/learning_gazebo-0.0.0-py3.8.egg-info
+[2.080s] running install_scripts
+[2.091s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/install.log'
+[2.133s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_gazebo' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_gazebo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_gazebo build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_gazebo/install.log --single-version-externally-managed

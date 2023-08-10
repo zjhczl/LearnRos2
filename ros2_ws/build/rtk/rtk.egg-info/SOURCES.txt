@@ -10,6 +10,7 @@ setup.py
 ../../build/rtk/rtk.egg-info/zip-safe
 resource/rtk
 rtk/__init__.py
+rtk/ntripClient.py
 rtk/ntripServerByCors.py
 rtk/test1.py
 test/test_copyright.py

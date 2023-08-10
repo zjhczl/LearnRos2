@@ -22,6 +22,8 @@ setup(
         'console_scripts': [
             "test=rtk.test1:main",
             "ntripServerByCors=rtk.ntripServerByCors:main",
+            "ntripClient=rtk.ntripClient:main",
+
         ],
     },
 )

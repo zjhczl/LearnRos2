@@ -1,0 +1,24 @@
+[1.954s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_node': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_node/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_node build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_node/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_node/install.log --single-version-externally-managed
+[2.078s] running egg_info
+[2.079s] writing ../../build/learning_node/learning_node.egg-info/PKG-INFO
+[2.079s] writing dependency_links to ../../build/learning_node/learning_node.egg-info/dependency_links.txt
+[2.081s] writing entry points to ../../build/learning_node/learning_node.egg-info/entry_points.txt
+[2.081s] writing requirements to ../../build/learning_node/learning_node.egg-info/requires.txt
+[2.081s] writing top-level names to ../../build/learning_node/learning_node.egg-info/top_level.txt
+[2.084s] reading manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[2.084s] writing manifest file '../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[2.084s] running build
+[2.084s] running build_py
+[2.084s] running install
+[2.084s] running install_lib
+[2.085s] running install_data
+[2.085s] running install_egg_info
+[2.086s] removing '/home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node-0.0.0-py3.8.egg-info' (and everything under it)
+[2.086s] Copying ../../build/learning_node/learning_node.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages/learning_node-0.0.0-py3.8.egg-info
+[2.086s] running install_scripts
+[2.097s] Installing node_helloworld script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[2.097s] Installing node_helloworld_class script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[2.097s] Installing node_object script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[2.097s] Installing node_object_webcam script to /home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/learning_node
+[2.097s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_node/install.log'
+[2.158s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_node' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_node/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_node build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_node/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_node/install.log --single-version-externally-managed

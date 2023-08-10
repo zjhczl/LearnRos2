@@ -1,0 +1,20 @@
+[1.836s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_launch': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_launch/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_launch build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_launch/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_launch/install.log --single-version-externally-managed
+[2.000s] running egg_info
+[2.001s] writing ../../build/learning_launch/learning_launch.egg-info/PKG-INFO
+[2.001s] writing dependency_links to ../../build/learning_launch/learning_launch.egg-info/dependency_links.txt
+[2.003s] writing entry points to ../../build/learning_launch/learning_launch.egg-info/entry_points.txt
+[2.003s] writing requirements to ../../build/learning_launch/learning_launch.egg-info/requires.txt
+[2.003s] writing top-level names to ../../build/learning_launch/learning_launch.egg-info/top_level.txt
+[2.004s] reading manifest file '../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.005s] writing manifest file '../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.005s] running build
+[2.005s] running build_py
+[2.005s] running install
+[2.008s] running install_lib
+[2.010s] running install_data
+[2.010s] running install_egg_info
+[2.015s] removing '/home/zj/cx/learnros2/ros2_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch-0.0.0-py3.8.egg-info' (and everything under it)
+[2.015s] Copying ../../build/learning_launch/learning_launch.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch-0.0.0-py3.8.egg-info
+[2.015s] running install_scripts
+[2.015s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_launch/install.log'
+[2.045s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_launch' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_launch/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_launch build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_launch/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_launch/install.log --single-version-externally-managed

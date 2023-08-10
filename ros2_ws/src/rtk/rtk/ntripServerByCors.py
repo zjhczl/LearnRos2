@@ -5,8 +5,10 @@
 import rclpy                                     # ROS2 Python接口库
 from rclpy.node import Node                      # ROS2 节点类
 import time
-from std_msgs.msg import ByteMultiArray
+from std_msgs.msg import ByteMultiArray 
 import socket
+import base64
+import math
 """
 创建一个HelloWorld节点, 初始化时输出“hello world”日志
 """
@@ -14,8 +16,8 @@ class NtripServerByCors(Node):
     def __init__(self, name):
         super().__init__(name)                       # ROS2节点父类初始化
         self.pub = self.create_publisher(ByteMultiArray, "chatter", 10)   
-        corsHost = "192.168.1.52"
-        corsPort = 9001
+        corsHost = "192.168.1.53"
+        corsPort = 2222
         mountPoint = ""
         username = "zj"
         password = "123"
@@ -70,10 +72,27 @@ class NtripServerByCors(Node):
             data = client_socket.recv(1024)
             if not data:
                 break
-            self.get_logger().info('I heard: "%s"' % msg.data)  
+            
             msg = ByteMultiArray()
-            msg.data = data
+            # data =b'\x01\x02\x03\x04'
+            # print()
+            # print("------")
+            print(data)
+            msg.data = [bytes([byte]) for byte in data]
+            # print("------")
+            # print(msg.data)
+            # print("------")
+            # a=b''.join(msg.data)
+            # print(a)
+            # byte_list = [int(byte) for byte in data]
+
+            # print(byte_list)
+            # msg.data = byte_list
+            # msg.deserialize(data)
+
             self.pub.publish(msg)
+            # self.get_logger().info('I heard: "%s"' % msg.data)  
+     
             gga = self.getGGA(lat, lon)
             client_socket.send(gga.encode('utf-8'))
 
