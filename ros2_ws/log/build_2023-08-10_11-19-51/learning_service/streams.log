@@ -1,0 +1,24 @@
+[0.692s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_service': AMENT_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface LD_LIBRARY_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_service/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/python3.8/site-packages:/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_service build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_service/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_service/install.log --single-version-externally-managed
+[0.802s] running egg_info
+[0.803s] writing ../../build/learning_service/learning_service.egg-info/PKG-INFO
+[0.803s] writing dependency_links to ../../build/learning_service/learning_service.egg-info/dependency_links.txt
+[0.803s] writing entry points to ../../build/learning_service/learning_service.egg-info/entry_points.txt
+[0.803s] writing requirements to ../../build/learning_service/learning_service.egg-info/requires.txt
+[0.803s] writing top-level names to ../../build/learning_service/learning_service.egg-info/top_level.txt
+[0.823s] reading manifest file '../../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[0.823s] writing manifest file '../../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[0.823s] running build
+[0.823s] running build_py
+[0.823s] running install
+[0.824s] running install_lib
+[0.825s] running install_data
+[0.825s] running install_egg_info
+[0.826s] removing '/home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/python3.8/site-packages/learning_service-0.0.0-py3.8.egg-info' (and everything under it)
+[0.826s] Copying ../../build/learning_service/learning_service.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/python3.8/site-packages/learning_service-0.0.0-py3.8.egg-info
+[0.826s] running install_scripts
+[0.836s] Installing service_adder_client script to /home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/learning_service
+[0.836s] Installing service_adder_server script to /home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/learning_service
+[0.836s] Installing service_object_client script to /home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/learning_service
+[0.836s] Installing service_object_server script to /home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/learning_service
+[0.836s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_service/install.log'
+[0.868s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_service' returned '0': AMENT_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface LD_LIBRARY_PATH=/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_service/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_service/lib/python3.8/site-packages:/home/zj/cx/learnros2/ros2_ws/install/learning_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_service build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_service/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_service/install.log --single-version-externally-managed

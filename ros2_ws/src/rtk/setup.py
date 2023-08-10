@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test=rtk.test:main",
+            "test=rtk.test1:main",
+            "ntripServerByCors=rtk.ntripServerByCors:main",
         ],
     },
 )

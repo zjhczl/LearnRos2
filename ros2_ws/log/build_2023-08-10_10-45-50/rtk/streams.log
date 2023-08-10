@@ -1,0 +1,16 @@
+[2.106s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/rtk': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/rtk/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rtk build --build-base /home/zj/cx/learnros2/ros2_ws/build/rtk/build install --record /home/zj/cx/learnros2/ros2_ws/build/rtk/install.log --install-scripts $base/lib/rtk --single-version-externally-managed
+[2.216s] running egg_info
+[2.216s] writing ../../build/rtk/rtk.egg-info/PKG-INFO
+[2.227s] writing dependency_links to ../../build/rtk/rtk.egg-info/dependency_links.txt
+[2.227s] writing entry points to ../../build/rtk/rtk.egg-info/entry_points.txt
+[2.227s] writing requirements to ../../build/rtk/rtk.egg-info/requires.txt
+[2.227s] writing top-level names to ../../build/rtk/rtk.egg-info/top_level.txt
+[2.258s] reading manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.259s] writing manifest file '../../build/rtk/rtk.egg-info/SOURCES.txt'
+[2.260s] running build
+[2.260s] running build_py
+[2.262s] running install
+[2.262s] running install_lib
+[2.275s] running install_data
+[2.277s] error: can't copy 'resource/rtk': doesn't exist or not a regular file
+[2.361s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/rtk' returned '1': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/rtk/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/rtk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rtk build --build-base /home/zj/cx/learnros2/ros2_ws/build/rtk/build install --record /home/zj/cx/learnros2/ros2_ws/build/rtk/install.log --install-scripts $base/lib/rtk --single-version-externally-managed
