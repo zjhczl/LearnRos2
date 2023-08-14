@@ -1,0 +1,22 @@
+[1.846s] Invoking command in '/home/zj/cx/learnros2/ros2_ws/src/learning_qos': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_qos/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_qos/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_qos build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_qos/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_qos/install.log --single-version-externally-managed
+[1.975s] running egg_info
+[1.975s] writing ../../build/learning_qos/learning_qos.egg-info/PKG-INFO
+[1.975s] writing dependency_links to ../../build/learning_qos/learning_qos.egg-info/dependency_links.txt
+[1.975s] writing entry points to ../../build/learning_qos/learning_qos.egg-info/entry_points.txt
+[1.975s] writing requirements to ../../build/learning_qos/learning_qos.egg-info/requires.txt
+[1.975s] writing top-level names to ../../build/learning_qos/learning_qos.egg-info/top_level.txt
+[1.997s] reading manifest file '../../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[1.998s] writing manifest file '../../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[1.998s] running build
+[1.998s] running build_py
+[1.998s] running install
+[1.999s] running install_lib
+[2.000s] running install_data
+[2.000s] running install_egg_info
+[2.001s] removing '/home/zj/cx/learnros2/ros2_ws/install/learning_qos/lib/python3.8/site-packages/learning_qos-0.0.0-py3.8.egg-info' (and everything under it)
+[2.001s] Copying ../../build/learning_qos/learning_qos.egg-info to /home/zj/cx/learnros2/ros2_ws/install/learning_qos/lib/python3.8/site-packages/learning_qos-0.0.0-py3.8.egg-info
+[2.002s] running install_scripts
+[2.014s] Installing qos_helloworld_pub script to /home/zj/cx/learnros2/ros2_ws/install/learning_qos/lib/learning_qos
+[2.014s] Installing qos_helloworld_sub script to /home/zj/cx/learnros2/ros2_ws/install/learning_qos/lib/learning_qos
+[2.014s] writing list of installed files to '/home/zj/cx/learnros2/ros2_ws/build/learning_qos/install.log'
+[2.034s] Invoked command in '/home/zj/cx/learnros2/ros2_ws/src/learning_qos' returned '0': PYTHONPATH=/home/zj/cx/learnros2/ros2_ws/build/learning_qos/prefix_override:/home/zj/cx/learnros2/ros2_ws/install/learning_qos/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learning_qos build --build-base /home/zj/cx/learnros2/ros2_ws/build/learning_qos/build install --record /home/zj/cx/learnros2/ros2_ws/build/learning_qos/install.log --single-version-externally-managed

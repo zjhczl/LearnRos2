@@ -23,6 +23,8 @@ setup(
             "test=rtk.test1:main",
             "ntripServerByCors=rtk.ntripServerByCors:main",
             "ntripClient=rtk.ntripClient:main",
+            "connectSignal=rtk.connectSignal:main",
+            "getCoordinatePoint=rtk.getCoordinatePoint:main",
 
         ],
     },
